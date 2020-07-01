@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta id="viewport" name="viewport"
+    content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Formulário do Cruzeirense</title>
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="SitePoint" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<div class="container">
+<header class="header">
+  <h1 id="title" class="text-center">
+    Formulário de experiência do torcedor cruzeirense
+  </h1>
+  <p id="description" class="description text-center">
+    Nos ajude a entender como podemos melhorar sua experiência como torcedor!
+  </p>
+</header>
+
+<body>
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+
+      <input type="text" name="name" class="form-control" id="name" placeholder="Insira seu nome" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Insira seu email" required>
+    
+    <div class="form-group">
+      <label for="age" id="number-label">Idade</label>
+
+      <input type="number" name="age" class="form-control" id="number" min="10" max="99" placeholder="Sua idade"
+        required />
+    </div>
+    <div class="form-group">
+      <p>Como você classificaria a presença digital do clube hoje?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value="Selected current role">Informe sua opinião!</option>
+
+        <option value="otima">Ótima</option>
+        <option value="boa">Boa</option>
+        <option value="media">Média</option>
+        <option value="ruim">Ruim</option>
+        <option value="pessima">Péssima</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Você faz parte de algum programa do Sócio Torcedor?</p>
+
+      <label><input type="radio" name="socio" class="input-radio" value="sim" checked />Sim
+      </label>
+      <label><input type="radio" name="socio" class="input-radio" value="nao" />Não
+      </label>
+    </div>
+    <div class="form-group">
+      <p>
+        Quais ferramentas digitais você utiliza para se comunicar com o
+        Clube?<span class="clue">Marque todas que você usa!</span>
+      </p>
+      <label><input type="checkbox" name="midias" class="input-checkbox" value="Aplicativo do Clube" />Aplicativo do
+        Cruzeiro</label>
+      <label><input type="checkbox" name="midias" class="input-checkbox" value="Instagram" />Instagram</label>
+      <label><input type="checkbox" name="midias" class="input-checkbox" value="Facebook" />Facebook</label>
+      <label><input type="checkbox" name="midias" class="input-checkbox" value="Site Globo esporte" />Site Globo
+        Esporte</label>
+      <label><input type="checkbox" name="midias" class="input-checkbox" value="Twitter" />Twitter</label>
+      <label><input type="checkbox" name="midias" class="input-checkbox" value="Reddit" />Reddit</label>
+    </div>
+    <div class="form-group">
+      <p>
+        Gostaríamos de ouvir a sua opinião! Quais novas formas de interação
+        você gostaria de ter com o Cruzeiro Esporte Clube?
+      </p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Coloque aqui sua opinião!"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+    </div>
+  </form>
+</body>
+</div>
+</html>
